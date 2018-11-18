@@ -19,30 +19,54 @@ header("Content-Type: application/json");
 $response = '';
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
-	$response = "Ciao $firstname, benvenuto!";
+	$response = "Ciao , benvenuto! Vai con /help per elenco opzioni";
 }
-elseif($text=="il mio nome")
+elseif($text=="/elenco")
 {
-	$response = "Stefano";
+	$response = "Ruggero Mores, Alessandro Montagner, Roberto Facchin, Daniele De Carli, Alberto Sasso, Stefano Zanella, Fabiano Zucco, Leonardo, Francesco";
 }
-elseif($text=="il mio paese")
+elseif($text=="/help")
 {
-	$response = "Feltre";
+	$response = "/help - questo help, /elenco per  elenco soci, /webcam elenco webcam, web nomewebcam per stato webcam, cognome  per avere indicativo;
 }
-elseif($text=="il mio lavoro")
+elseif($text=="zanella")
 {
-	$response = "Manager";
+	$response = "iu3fcm";
 }
-elseif($text=="il mio cognome")
+elseif($text=="mores")
 {
-	$response = "Zanella";
+	$response = "ik3dwy";
+}
+elseif($text=="/webcam")
+{
+	$response = "webcam avena, webcam tomatico, webcam fiere, webcam telva, webcam casere";
+}
+elseif($text=="web tomatico")
+{
+	$response = "spenta";
+}
+elseif($text=="web fiere")
+{
+	$response = "spenta";
+}
+elseif($text=="web casere")
+{
+	$response = "spenta";
+}
+elseif($text=="web avena")
+{
+	$response = "spenta";
+}
+elseif($text=="web telva")
+{
+	$response = "spenta";
 }
 else
 {
-	$response = "Non so cosa vuoi";
+	$response = "Non conosco altri";
 }
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 // imposto la keyboard
-//$parameters["reply_markup"] = '{ "keyboard": [["Il mio nome"], ["Il mio cognome"], ["Il mio paese"], ["Il mio lavoro"]], "one_time_keyboard": false}';
+//$parameters["reply_markup"] = '{ "keyboard": [["web avena], ["web tomatico"], ["web casere"], ["web telva"], ["web fiere"]], "one_time_keyboard": false}';
 echo json_encode($parameters);
