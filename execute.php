@@ -26,7 +26,7 @@ elseif($text=="/elenco")
 	$response = "Daniele De Carli, Roberto Facchin, Francesco Faoro, Leonardo Gallo, Alessandro Montagner, Ruggero Mores,
 	Alberto Sasso, Stefano Zanella, Fabiano Zucco";
 }
-elseif($text=="/help")
+elseif(strpos($text, "/help") === 0)
 {
 	$response = "/help per questo help, /elenco per l'elenco soci, /webcam per l'elenco webcam, /'cognome'  per l'indicativo ";
 }
