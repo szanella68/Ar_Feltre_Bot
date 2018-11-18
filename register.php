@@ -2,7 +2,7 @@
 // PARAMETRI DA MODIFICARE
 $WEBHOOK_URL = 'https://arfeltrebot.herokuapp.com/execute.php';
 $BOT_TOKEN = '748395004:AAFmMhBE372lu8VBspe5m9Dgv6ErdLzYw30';
-// NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
+// NON APPORTARE MODIFICHE NEL CODICE SEGUENTE 
 $API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';
 $method = 'setWebhook';
 $parameters = array('url' => $WEBHOOK_URL);
