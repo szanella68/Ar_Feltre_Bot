@@ -39,27 +39,28 @@ elseif($text=="mores")
 }
 elseif($text=="/webcam")
 {
-	$response = "webcam avena, webcam tomatico, webcam fiere, webcam telva, webcam casere";
+	$keyboard = ['inline_keyboard' => [[['text' =>  'web avena', 'url' => 'http://www.arifeltre.it/webcam/avena.jpg'],['text' =>  'web buse', 'url' => 'http://www.arifeltre.it/Cam9/webcam.jpg']]]];
+        $response = "scegli la webcam";
 }
-elseif($text=="web tomatico")
+elseif($text=="leonardo")
 {
-	$response = "spenta";
+	$response = "yyyyy";
 }
-elseif($text=="web fiere")
+elseif($text=="montagner")
 {
-	$response = "spenta";
+	$response = "000000";
 }
-elseif($text=="web casere")
+elseif($text=="zucco")
 {
-	$response = "spenta";
+	$response = "ggggggg";
 }
-elseif($text=="web avena")
+elseif($text=="facchin")
 {
-	$response = "spenta";
+	$response = "uuuuuu";
 }
-elseif($text=="web telva")
+elseif($text=="francesco")
 {
-	$response = "spenta";
+	$response = "9999999";
 }
 else
 {
@@ -68,5 +69,9 @@ else
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 // imposto la keyboard
-$parameters["reply_markup"] = '{ "keyboard": [["web avena], ["web tomatico"], ["web casere"], ["web telva"], ["web fiere"]], "one_time_keyboard": false}';
+//$parameters["reply_markup"] = '{ "keyboard": [["web avena], ["web tomatico"], ["web casere"], ["web telva"], ["web fiere"]], "one_time_keyboard": false}';
+if($text=="/webcam")
+{
+	$parameters["reply_markup"] = json_encode($keyboard, true);
+}
 echo json_encode($parameters);
