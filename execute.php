@@ -3,7 +3,7 @@ $content = file_get_contents("php://input");
 $update = json_decode($content, true);
 if(!$update)
 {
-  exit;
+  exit; 
 }
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
