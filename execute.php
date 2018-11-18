@@ -27,7 +27,7 @@ elseif($text=="/elenco")
 }
 elseif($text=="/help")
 {
-	$response = "/help - questo help, /elenco per  elenco soci, /webcam elenco webcam, web nomewebcam per stato webcam, cognome  per avere indicativo;
+	$response = "/help - questo help, /elenco per  elenco soci, /webcam elenco webcam, web nomewebcam per stato webcam, cognome  per avere indicativo";
 }
 elseif($text=="zanella")
 {
