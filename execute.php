@@ -85,9 +85,10 @@ elseif($text=="/webcam")
 					    ['text' =>  'fiere', 'url' => 'http://www.arifeltre.it/Cam4/image/camera1.jpg']]]];
         $response = "scegli la webcam";
 }
-else
+else 
 {
-	$response = "Comando non previsto. /help";
+	exit;
+	//$response = "Comando non previsto. /help";
 }
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
