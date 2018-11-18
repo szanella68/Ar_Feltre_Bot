@@ -39,8 +39,12 @@ elseif($text=="mores")
 }
 elseif($text=="/webcam")
 {
-	$keyboard = ['inline_keyboard' => [[['text' =>  'web avena', 'url' => 'http://www.arifeltre.it/webcam/avena.jpg'],
-					    ['text' =>  'web buse', 'url' => 'http://www.arifeltre.it/Cam9/webcam.jpg']]]];
+	$keyboard = ['inline_keyboard' => [[['text' =>  'web telva', 'url' => 'http://www.arifeltre.it/Cam6/webcam.jpg'],
+					    ['text' =>  'web pedavena', 'url' => 'http://www.arifeltre.it/Cam/webcam.jpg'],
+					    ['text' =>  'web avena', 'url' => 'http://www.arifeltre.it/Cam8/webcam.jpg'],
+					    ['text' =>  'web avena piste', 'url' => 'http://www.arifeltre.it/webcam/avena.jpg'],
+					    ['text' =>  'web buse', 'url' => 'http://www.arifeltre.it/Cam9/webcam.jpg'],
+					    ['text' =>  'web fiere', 'url' => 'http://www.arifeltre.it/Cam4/image/camera1.jpg']]]];
         $response = "scegli la webcam";
 }
 elseif($text=="leonardo")
