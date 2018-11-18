@@ -23,15 +23,23 @@ if(strpos($text, "/start") === 0 || $text=="ciao")
 }
 elseif($text=="/elenco")
 {
-	$response = "Ruggero Mores, Alessandro Montagner, Roberto Facchin, Daniele De Carli, Alberto Sasso, 
-	Stefano Zanella, Fabiano Zucco, Leonardo Gallo, Francesco Faoro";
+	$response = "Daniele De Carli, Roberto Facchin, Francesco Faoro, Leonardo Gallo, Alessandro Montagner, Ruggero Mores,
+	Alberto Sasso, Stefano Zanella, Fabiano Zucco";
 }
 elseif($text=="/help")
 {
-	$response = "/help per questo help, /elenco per elenco soci, /webcam per elenco webcam, /'cognome'  per indicativo ";
+	$response = "/help per questo help, /elenco per l'elenco soci, /webcam per l'elenco webcam, /'cognome'  per l'indicativo ";
+}
+elseif($text=="/'cognome'")
+{ 
+	$response = "Non ci siamo!! Sostituire 'cognome' con un cognome reale: /berlusconi";
+}
+elseif($text=="/berlusconi")
+{ 
+	$response = "Spiritoso!! Silvio non è iscritto ad Ar Feltre!!  Prova con: /zanella";
 }
 elseif($text=="/zanella")
-{
+{ 
 	$response = "IU3FCM";
 }
 elseif($text=="/sasso")
