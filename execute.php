@@ -94,7 +94,7 @@ $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 // imposto la keyboard
 //$parameters["reply_markup"] = '{ "keyboard": [["web avena], ["web tomatico"], ["web casere"], ["web telva"], ["web fiere"]], "one_time_keyboard": false}';
-if($text=="/webcam")
+if(strpos($text, "/webcam") === 0)
 {
 	$parameters["reply_markup"] = json_encode($keyboard, true);
 }
