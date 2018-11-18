@@ -27,13 +27,13 @@ elseif($text=="/elenco")
 }
 elseif($text=="/help")
 {
-	$response = "/help - questo help, /elenco per  elenco soci, /webcam elenco webcam, web nomewebcam per stato webcam, cognome  per avere indicativo";
+	$response = "/help per questo help, /elenco per elenco soci, /webcam per elenco webcam, /'cognome'  per indicativo ";
 }
-elseif($text=="zanella")
+elseif($text=="/zanella")
 {
 	$response = "iu3fcm";
 }
-elseif($text=="mores")
+elseif($text=="/mores")
 {
 	$response = "ik3dwy";
 }
@@ -47,29 +47,33 @@ elseif($text=="/webcam")
 					    ['text' =>  'web fiere', 'url' => 'http://www.arifeltre.it/Cam4/image/camera1.jpg']]]];
         $response = "scegli la webcam";
 }
-elseif($text=="leonardo")
+elseif($text=="/leonardo")
 {
 	$response = "yyyyy";
 }
-elseif($text=="montagner")
+elseif($text=="/montagner")
 {
 	$response = "000000";
 }
-elseif($text=="zucco")
+elseif($text=="/zucco")
 {
 	$response = "ggggggg";
 }
-elseif($text=="facchin")
+elseif($text=="/facchin")
 {
 	$response = "uuuuuu";
 }
-elseif($text=="francesco")
+elseif($text=="/francesco")
+{
+	$response = "9999999";
+}
+elseif($text=="/de carli")
 {
 	$response = "9999999";
 }
 else
 {
-	$response = "Non conosco altri";
+	$response = "Comando non previsto. /help";
 }
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
