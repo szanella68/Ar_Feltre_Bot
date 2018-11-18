@@ -23,7 +23,8 @@ if(strpos($text, "/start") === 0 || $text=="ciao")
 }
 elseif($text=="/elenco")
 {
-	$response = "Ruggero Mores, Alessandro Montagner, Roberto Facchin, Daniele De Carli, Alberto Sasso, Stefano Zanella, Fabiano Zucco, Leonardo, Francesco";
+	$response = "Ruggero Mores, Alessandro Montagner, Roberto Facchin, Daniele De Carli, Alberto Sasso, 
+	Stefano Zanella, Fabiano Zucco, Leonardo Gallo, Francesco Faoro";
 }
 elseif($text=="/help")
 {
@@ -31,11 +32,15 @@ elseif($text=="/help")
 }
 elseif($text=="/zanella")
 {
-	$response = "iu3fcm";
+	$response = "IU3FCM";
+}
+elseif($text=="/sasso")
+{
+	$response = "I3XFY";
 }
 elseif($text=="/mores")
 {
-	$response = "ik3dwy";
+	$response = "IK3DVY";
 }
 elseif($text=="/webcam")
 {
@@ -47,29 +52,29 @@ elseif($text=="/webcam")
 					    ['text' =>  'web fiere', 'url' => 'http://www.arifeltre.it/Cam4/image/camera1.jpg']]]];
         $response = "scegli la webcam";
 }
-elseif($text=="/leonardo")
+elseif($text=="/gallo")
 {
-	$response = "yyyyy";
+	$response = "IZ3ATV";
 }
 elseif($text=="/montagner")
 {
-	$response = "000000";
+	$response = "IW3GIM";
 }
 elseif($text=="/zucco")
 {
-	$response = "ggggggg";
+	$response = "xxxx";
 }
 elseif($text=="/facchin")
 {
-	$response = "uuuuuu";
+	$response = "IZ3FLG";
 }
-elseif($text=="/francesco")
+elseif($text=="/faoro")
 {
-	$response = "9999999";
+	$response = "IW3IJP";
 }
 elseif($text=="/de carli")
 {
-	$response = "9999999";
+	$response = "IW3GAE";
 }
 else
 {
