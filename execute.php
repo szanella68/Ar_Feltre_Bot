@@ -34,7 +34,7 @@ elseif(strpos($text, "/'cognome'") === 0)
 { 
 	$response = "Non ci siamo!! Sostituire 'cognome' con un cognome reale: /berlusconi";
 }
-elseif(strpos($text, "/berlusconi") === 0))
+elseif(strpos($text, "/berlusconi") === 0)
 { 
 	$response = "Spiritoso!! Silvio non è iscritto ad Ar Feltre!!  Prova con: /zanella";
 }
