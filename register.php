@@ -1,6 +1,6 @@
 <?php
 // PARAMETRI DA MODIFICARE
-$WEBHOOK_URL = 'https://arfeltrebot.herokuapp.com/execute.php';
+$WEBHOOK_URL = 'https://Ar_Feltre_Bot.herokuapp.com/execute.php';
 $BOT_TOKEN = '780063736:AAGJl9E9QMGcntVamdLODJKXohJ3WCK6JnU';
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
 $API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';
