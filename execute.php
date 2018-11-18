@@ -21,7 +21,7 @@ if(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Ciao , benvenuto! Vai con /help per elenco opzioni";
 }
-elseif($text=="/elenco")
+elseif(strpos($text, "/elenco") === 0)
 {
 	$response = "Daniele De Carli, Roberto Facchin, Francesco Faoro, Leonardo Gallo, Alessandro Montagner, Ruggero Mores,
 	Alberto Sasso, Stefano Zanella, Fabiano Zucco";
@@ -30,51 +30,51 @@ elseif(strpos($text, "/help") === 0)
 {
 	$response = "/help per questo help, /elenco per l'elenco soci, /webcam per l'elenco webcam, /'cognome'  per l'indicativo ";
 }
-elseif($text=="/'cognome'")
+elseif(strpos($text, "/'cognome'") === 0)
 { 
 	$response = "Non ci siamo!! Sostituire 'cognome' con un cognome reale: /berlusconi";
 }
-elseif($text=="/berlusconi")
+elseif(strpos($text, "/berlusconi") === 0))
 { 
 	$response = "Spiritoso!! Silvio non è iscritto ad Ar Feltre!!  Prova con: /zanella";
 }
-elseif($text=="/zanella")
+elseif(strpos($text, "/zanella") === 0)
 { 
 	$response = "IU3FCM";
 }
-elseif($text=="/sasso")
+elseif(strpos($text, "/sasso") === 0)
 {
 	$response = "I3XFY";
 }
-elseif($text=="/mores")
+elseif(strpos($text, "/mores") === 0)
 {
 	$response = "IK3DVY";
 }
-elseif($text=="/gallo")
+elseif(strpos($text, "/gallo") === 0)
 {
 	$response = "IZ3ATV";
 }
-elseif($text=="/montagner")
-{
+elseif(strpos($text, "/montagner") === 0)
+{	
 	$response = "IW3GIM";
 }
-elseif($text=="/zucco")
+elseif(strpos($text, "/zucco") === 0)
 {
 	$response = "xxxx";
 }
-elseif($text=="/facchin")
+elseif(strpos($text, "/facchin") === 0)
 {
 	$response = "IZ3FLG";
 }
-elseif($text=="/faoro")
+elseif(strpos($text, "/faoro") === 0)
 {
 	$response = "IW3IJP";
 }
-elseif($text=="/de carli")
+elseif(strpos($text, "/de carli") === 0)
 {
 	$response = "IW3GAE";
 }
-elseif($text=="/webcam")
+elseif(strpos($text, "/webcam") === 0)
 {
 	$keyboard = ['inline_keyboard' => [[['text' =>  'telva', 'url' => 'http://www.arifeltre.it/Cam6/webcam.jpg'],
 					    ['text' =>  'pedavena', 'url' => 'http://www.arifeltre.it/Cam/webcam.jpg'],
