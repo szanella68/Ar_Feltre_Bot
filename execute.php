@@ -42,16 +42,6 @@ elseif($text=="/mores")
 {
 	$response = "IK3DVY";
 }
-elseif($text=="/webcam")
-{
-	$keyboard = ['inline_keyboard' => [[['text' =>  'web telva', 'url' => 'http://www.arifeltre.it/Cam6/webcam.jpg'],
-					    ['text' =>  'web pedavena', 'url' => 'http://www.arifeltre.it/Cam/webcam.jpg'],
-					    ['text' =>  'web avena', 'url' => 'http://www.arifeltre.it/Cam8/webcam.jpg'],
-					    ['text' =>  'web avena piste', 'url' => 'http://www.arifeltre.it/webcam/avena.jpg'],
-					    ['text' =>  'web buse', 'url' => 'http://www.arifeltre.it/Cam9/webcam.jpg'],
-					    ['text' =>  'web fiere', 'url' => 'http://www.arifeltre.it/Cam4/image/camera1.jpg']]]];
-        $response = "scegli la webcam";
-}
 elseif($text=="/gallo")
 {
 	$response = "IZ3ATV";
@@ -75,6 +65,17 @@ elseif($text=="/faoro")
 elseif($text=="/de carli")
 {
 	$response = "IW3GAE";
+}
+elseif($text=="/webcam")
+{
+	$keyboard = ['inline_keyboard' => [['text' =>  'telva', 'url' => 'http://www.arifeltre.it/Cam6/webcam.jpg'],
+					    ['text' =>  'pedavena', 'url' => 'http://www.arifeltre.it/Cam/webcam.jpg'],
+					    ['text' =>  'avena', 'url' => 'http://www.arifeltre.it/Cam8/webcam.jpg'],
+					    ['text' =>  'piste avena', 'url' => 'http://www.arifeltre.it/webcam/avena.jpg'],
+					    ['text' =>  'buse', 'url' => 'http://www.arifeltre.it/Cam9/webcam.jpg'],
+					    ['text' =>  'tomatico', 'url' => 'http://www.arifeltre.it/Cam1/webcam.jpg'],
+					    ['text' =>  'fiere', 'url' => 'http://www.arifeltre.it/Cam4/image/camera1.jpg']]];
+        $response = "scegli la webcam";
 }
 else
 {
