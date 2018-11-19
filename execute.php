@@ -19,16 +19,16 @@ header("Content-Type: application/json");
 $response = '';
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
-	$response = "Ciao , benvenuto! Vai con /help per elenco opzioni";
+	$response = "Ciao, se ti serve il mio aiuto digita /help per elenco opzioni";
 }
-elseif(strpos($text, "/elenco") === 0)
+elseif(strpos($text, "/soci") === 0)
 {
-	$response = "Daniele De Carli, Roberto Facchin, Francesco Faoro, Leonardo Gallo, Alessandro Montagner, Ruggero Mores,
-	Alberto Sasso, Stefano Zanella, Fabiano Zucco";
+	$response = "/De_Carli, /Facchin Roberto, /Faoro Francesco, /Gallo Leonardo, /Montagner Alessandro, /Mores Ruggero,
+	/Sasso Alberto, /Zanella Stefano, /Zucco Fabiano";
 }
 elseif(strpos($text, "/help") === 0)
 {
-	$response = "/help per questo help, /elenco per l'elenco soci, /webcam per l'elenco webcam, /'cognome'  per l'indicativo ";
+	$response = "/help per questo help, /soci per l'elenco soci, /webcam per l'elenco webcam, /'cognome'  per l'indicativo ";
 }
 elseif(strpos($text, "/'cognome'") === 0)
 { 
@@ -70,7 +70,7 @@ elseif(strpos($text, "/faoro") === 0)
 {
 	$response = "IW3IJP";
 }
-elseif(strpos($text, "/de carli") === 0)
+elseif(strpos($text, "/de_carli") === 0)
 {
 	$response = "IW3GAE";
 }
