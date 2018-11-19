@@ -79,7 +79,7 @@ elseif(strpos($text, "/webcam") === 0)
 	$keyboard = [
 		'inline_keyboard' => [
 			[
-			['text' =>  'telva', 'url' => 'http://www.arifeltre.it/Cam6/webcam.jpg'],
+			['text' =>  'tomatico', 'url' => 'http://www.arifeltre.it/Cam1/webcam.jpg'],
 			['text' =>  'pedavena', 'url' => 'http://www.arifeltre.it/Cam/webcam.jpg'],
 			],
 			[
@@ -88,7 +88,7 @@ elseif(strpos($text, "/webcam") === 0)
 			],
 			[
 			['text' =>  'buse', 'url' => 'http://www.arifeltre.it/Cam9/webcam.jpg'],
-			['text' =>  'tomatico', 'url' => 'http://www.arifeltre.it/Cam1/webcam.jpg'],
+			['text' =>  'telva', 'url' => 'http://www.arifeltre.it/Cam6/webcam.jpg'],
 			['text' =>  'fiere', 'url' => 'http://www.arifeltre.it/Cam4/image/camera1.jpg']
 			],
 		]
